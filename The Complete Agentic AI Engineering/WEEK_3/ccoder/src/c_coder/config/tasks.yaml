@@ -1,0 +1,21 @@
+plant_growth_task: 
+  description: >
+    Research and analyze the growth patterns of a newly discovered plant 
+    species found in semi-arid regions. Focus on its water consumption, 
+    resilience to heat stress, and potential agricultural applications
+    Summarize findings with scientific accuracy and practical insights.
+  expected_output: >
+    A detailed report containing plant physiology insights, growth conditions, 
+    potential use in sustainable agriculture, and recommendations for further research.
+  agent: researcher
+ 
+
+reporting_task:
+  description: >
+    Review the context you got and expand each topic into a full section for a report.
+    Make sure the report is detailed and contains any and all relevant information.
+  expected_output: >
+    A fully fledged report with the main topics, each with a full section of information.
+    Formatted as markdown without '```'
+  agent: analyst
+  output_file: output/code_and_output.txt
